@@ -41,3 +41,16 @@
 .read-the-docs {
   color: #666666;
 }
+
+/* Dark mode transitions */
+:root {
+  --transition-duration: 0.3s;
+}
+
+html, body, * {
+  transition: background-color var(--transition-duration) ease,
+              border-color var(--transition-duration) ease,
+              color var(--transition-duration) ease,
+              fill var(--transition-duration) ease,
+              stroke var(--transition-duration) ease;
+}

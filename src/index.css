@@ -44,6 +44,45 @@
     --sidebar-border: 226 42% 33%;
     --sidebar-ring: 38 92.7% 50.6%;
   }
+
+  .dark {
+    --background: 240 10% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217 91.2% 59.8%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 38 92.7% 50.6%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --sidebar-background: 240 10% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 240 10% 8%;
+    --sidebar-accent: 240 10% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 10% 15%;
+    --sidebar-ring: 38 92.7% 50.6%;
+  }
 }
 
 @layer base {
@@ -52,6 +91,6 @@
   }
 
   body {
-    @apply bg-hotel-gray text-hotel-darkGray;
+    @apply bg-hotel-gray text-hotel-darkGray dark:bg-hotel-darkBg dark:text-hotel-darkText;
   }
 }

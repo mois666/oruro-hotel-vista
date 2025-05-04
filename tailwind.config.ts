@@ -74,6 +74,13 @@ export default {
 					mediumGray: '#666666',// Medium gray for secondary text
 					positive: '#10B981',  // Green for positive indicators
 					negative: '#EF4444',  // Red for negative indicators
+					
+					// Dark mode colors
+					darkBg: '#1A1F2C',       // Dark background
+					darkCard: '#222222',     // Dark card background
+					darkBorder: '#403E43',   // Dark border color
+					darkText: '#FFFFFF',     // Dark mode text
+					darkSecondaryText: '#C8C8C9', // Dark mode secondary text
 				}
 			},
 			borderRadius: {
