@@ -17,8 +17,8 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ href, icon, label, isActive }
       className={cn(
         "flex items-center gap-3 px-4 py-3 rounded-lg transition-colors",
         isActive 
-          ? "bg-sidebar-accent text-white" 
-          : "text-sidebar-foreground/90 hover:bg-sidebar-accent/80 hover:text-white"
+          ? "bg-hotel-darkBlue text-white" 
+          : "text-sidebar-foreground/90 hover:bg-hotel-darkBlue/80 hover:text-white"
       )}
     >
       <span className="text-lg">{icon}</span>
@@ -59,7 +59,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="bg-sidebar flex flex-col w-60 h-screen py-6">
+    <div className="bg-[#2D3748] flex flex-col w-60 h-screen py-6">
       <div className="px-4 mb-6">
         <h2 className="text-xl font-bold text-white flex items-center gap-2">
           <div className="h-8 w-8 border-2 border-white flex items-center justify-center">
@@ -82,7 +82,7 @@ const Sidebar = () => {
       </div>
       
       <div className="px-4 mt-auto">
-        <div className="bg-hotel-darkBlue rounded-lg p-4 text-white text-sm">
+        <div className="bg-[#1E3A8A] rounded-lg p-4 text-white text-sm">
           <p className="font-medium">Hotel Oruro</p>
           <p className="text-xs text-white/70">Sistema de gestión v1.0</p>
         </div>

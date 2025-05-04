@@ -17,7 +17,7 @@ const GuestSummary: React.FC<GuestSummaryProps> = ({ guests, className }) => {
     <Card className={className}>
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>Huéspedes Recientes</CardTitle>
-        <span className="text-sm text-muted-foreground">{guests.length} total</span>
+        <span className="text-sm text-hotel-mediumGray">{guests.length} total</span>
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
@@ -29,12 +29,12 @@ const GuestSummary: React.FC<GuestSummaryProps> = ({ guests, className }) => {
                 </div>
                 <div className="ml-3">
                   <p className="font-medium">{guest.firstName} {guest.lastName}</p>
-                  <p className="text-sm text-muted-foreground">Habitación {guest.roomNumber}</p>
+                  <p className="text-sm text-hotel-mediumGray">Habitación {guest.roomNumber}</p>
                 </div>
               </div>
               <div className="text-right">
                 <p className="text-sm font-medium">{format(new Date(guest.checkIn), 'dd/MM/yyyy', { locale: es })}</p>
-                <p className="text-sm text-muted-foreground">al {format(new Date(guest.checkOut), 'dd/MM/yyyy', { locale: es })}</p>
+                <p className="text-sm text-hotel-mediumGray">al {format(new Date(guest.checkOut), 'dd/MM/yyyy', { locale: es })}</p>
               </div>
             </div>
           ))}

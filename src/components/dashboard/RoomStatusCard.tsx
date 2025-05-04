@@ -10,10 +10,10 @@ interface RoomStatusCardProps {
 }
 
 const statusColorMap = {
-  [RoomStatus.AVAILABLE]: 'bg-green-100 text-green-700',
-  [RoomStatus.OCCUPIED]: 'bg-red-100 text-red-700',
-  [RoomStatus.CLEANING]: 'bg-yellow-100 text-yellow-700',
-  [RoomStatus.MAINTENANCE]: 'bg-gray-100 text-gray-700',
+  [RoomStatus.AVAILABLE]: 'bg-green-100 text-hotel-positive',
+  [RoomStatus.OCCUPIED]: 'bg-red-100 text-hotel-negative',
+  [RoomStatus.CLEANING]: 'bg-amber-100 text-hotel-gold',
+  [RoomStatus.MAINTENANCE]: 'bg-gray-100 text-hotel-mediumGray',
 };
 
 const statusLabels = {

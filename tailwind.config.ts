@@ -64,13 +64,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				hotel: {
-					blue: '#0F3460',
-					gold: '#E8B74B',
-					lightGold: '#F8EAC7',
-					darkBlue: '#0A2647',
-					lightBlue: '#ECF2F9',
-					gray: '#F5F5F5',
-					darkGray: '#333333',
+					blue: '#3B82F6',      // Updated blue
+					gold: '#F59E0B',      // Updated gold (amber)
+					lightGold: '#FEF3C7', // Light amber
+					darkBlue: '#1E3A8A',  // Updated darker blue
+					lightBlue: '#EFF6FF', // Light blue background
+					gray: '#F5F5F5',      // Light gray background
+					darkGray: '#333333',  // Dark gray for text
+					mediumGray: '#666666',// Medium gray for secondary text
+					positive: '#10B981',  // Green for positive indicators
+					negative: '#EF4444',  // Red for negative indicators
 				}
 			},
 			borderRadius: {

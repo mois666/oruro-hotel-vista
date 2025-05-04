@@ -30,12 +30,12 @@ const OccupancyChart: React.FC<OccupancyChartProps> = ({ className }) => {
               bottom: 5,
             }}
           >
-            <CartesianGrid strokeDasharray="3 3" />
+            <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
             <XAxis dataKey="floor" />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="occupied" name="Ocupadas" fill="#0F3460" />
-            <Bar dataKey="available" name="Disponibles" fill="#E8B74B" />
+            <Bar dataKey="occupied" name="Ocupadas" fill="#3B82F6" />
+            <Bar dataKey="available" name="Disponibles" fill="#10B981" />
           </BarChart>
         </ResponsiveContainer>
       </CardContent>
