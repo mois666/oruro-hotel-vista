@@ -36,3 +36,16 @@ export enum RoomStatus {
   CLEANING = 'cleaning',
   MAINTENANCE = 'maintenance'
 }
+
+export enum UserRole {
+  ADMIN = 'admin',
+  RECEPTIONIST = 'receptionist'
+}
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: UserRole;
+  dateCreated: string;
+}
