@@ -24,6 +24,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Guest, RoomType } from '@/types';
 import { format } from 'date-fns';
+import { es } from 'date-fns/locale'; // Correctly import the Spanish locale
 import { Edit, MoreHorizontal, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -118,8 +119,8 @@ const GuestList: React.FC<GuestListProps> = ({
                   <TableCell>{`${guest.firstName} ${guest.lastName}`}</TableCell>
                   <TableCell>{guest.roomNumber}</TableCell>
                   <TableCell>{guest.floor}</TableCell>
-                  <TableCell>{format(new Date(guest.checkIn), 'dd/MM/yyyy')}</TableCell>
-                  <TableCell>{format(new Date(guest.checkOut), 'dd/MM/yyyy')}</TableCell>
+                  <TableCell>{format(new Date(guest.checkIn), 'dd/MM/yyyy', { locale: es })}</TableCell>
+                  <TableCell>{format(new Date(guest.checkOut), 'dd/MM/yyyy', { locale: es })}</TableCell>
                   <TableCell className="text-right">
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>

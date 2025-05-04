@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { format } from 'date-fns';
+import { es } from 'date-fns/locale'; // Correctly import the Spanish locale
 
 import {
   Form,
@@ -266,7 +267,7 @@ const GuestRegistrationForm: React.FC<GuestRegistrationFormProps> = ({ onSubmitS
                             )}
                           >
                             {field.value ? (
-                              format(field.value, "dd/MM/yyyy")
+                              format(field.value, "dd/MM/yyyy", { locale: es })
                             ) : (
                               <span>Seleccione una fecha</span>
                             )}
@@ -281,6 +282,7 @@ const GuestRegistrationForm: React.FC<GuestRegistrationFormProps> = ({ onSubmitS
                           onSelect={field.onChange}
                           disabled={(date) => date < new Date()}
                           initialFocus
+                          locale={es}
                           className="p-3 pointer-events-auto"
                         />
                       </PopoverContent>
@@ -307,7 +309,7 @@ const GuestRegistrationForm: React.FC<GuestRegistrationFormProps> = ({ onSubmitS
                             )}
                           >
                             {field.value ? (
-                              format(field.value, "dd/MM/yyyy")
+                              format(field.value, "dd/MM/yyyy", { locale: es })
                             ) : (
                               <span>Seleccione una fecha</span>
                             )}
@@ -325,6 +327,7 @@ const GuestRegistrationForm: React.FC<GuestRegistrationFormProps> = ({ onSubmitS
                             (checkIn && date <= checkIn)
                           }
                           initialFocus
+                          locale={es}
                           className="p-3 pointer-events-auto"
                         />
                       </PopoverContent>

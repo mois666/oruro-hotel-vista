@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Guest } from '@/types';
 import { format } from 'date-fns';
+import { es } from 'date-fns/locale'; // Correctly import the Spanish locale
 
 interface GuestSummaryProps {
   guests: Guest[];
@@ -32,8 +33,8 @@ const GuestSummary: React.FC<GuestSummaryProps> = ({ guests, className }) => {
                 </div>
               </div>
               <div className="text-right">
-                <p className="text-sm font-medium">{format(new Date(guest.checkIn), 'dd/MM/yyyy')}</p>
-                <p className="text-sm text-muted-foreground">al {format(new Date(guest.checkOut), 'dd/MM/yyyy')}</p>
+                <p className="text-sm font-medium">{format(new Date(guest.checkIn), 'dd/MM/yyyy', { locale: es })}</p>
+                <p className="text-sm text-muted-foreground">al {format(new Date(guest.checkOut), 'dd/MM/yyyy', { locale: es })}</p>
               </div>
             </div>
           ))}
