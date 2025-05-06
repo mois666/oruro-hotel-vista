@@ -21,8 +21,8 @@ export const guests: Guest[] = [
   {
     id: '1',
     documentId: '12345678',
-    firstName: 'Alex',
-    lastName: 'Marin',
+    firstName: 'Julio',
+    lastName: 'Col',
     phone: '555-1234',
     roomType: RoomType.DOUBLE,
     roomNumber: 203,
